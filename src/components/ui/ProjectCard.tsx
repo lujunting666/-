@@ -1,4 +1,5 @@
-import { ExternalLink, Github, Play, Image } from "lucide-react";
+import Image from "next/image";
+import { ExternalLink, Github, Play, Image as ImageIcon } from "lucide-react";
 
 interface ProjectCardProps {
   name: string;
@@ -24,11 +25,12 @@ export default function ProjectCard({
       {/* 项目图片/视频预览 */}
       {image && (
         <div className="relative -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-xl">
-          <img
+          <Image
             src={image}
             alt={`${name} 截图`}
+            width={600}
+            height={320}
             className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
-            loading="lazy"
           />
           {video && (
             <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -43,7 +45,7 @@ export default function ProjectCard({
       {/* 无图片时的占位 */}
       {!image && (
         <div className="relative -mx-6 -mt-6 mb-4 h-24 flex items-center justify-center bg-gradient-to-br from-primary-50 to-primary-100 dark:from-slate-700 dark:to-slate-800 rounded-t-xl">
-          <Image className="w-8 h-8 text-primary-300 dark:text-slate-600" />
+          <ImageIcon className="w-8 h-8 text-primary-300 dark:text-slate-600" />
         </div>
       )}
 
