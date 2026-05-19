@@ -18,7 +18,7 @@ export default function Hero() {
           transition={{ duration: 0.6 }}
         >
           <span className="inline-block px-3 py-1 text-sm font-medium rounded-full bg-primary-100 dark:bg-primary-900/30 text-primary-700 dark:text-primary-300 mb-6">
-            Welcome to my portfolio
+            欢迎来到我的作品集
           </span>
         </motion.div>
 
@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.6, delay: 0.1 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 dark:text-white mb-6"
         >
-          Hi, I&apos;m{" "}
+          你好，我是{" "}
           <span className="text-primary-600 dark:text-primary-400">
             {personalInfo.name}
           </span>
@@ -53,7 +53,7 @@ export default function Hero() {
             href="#projects"
             className="px-6 py-3 rounded-lg bg-primary-600 text-white font-medium hover:bg-primary-700 transition-colors shadow-lg shadow-primary-500/25"
           >
-            View Projects
+            查看项目
           </a>
           <a
             href="/resume/resume.pdf"
@@ -61,7 +61,7 @@ export default function Hero() {
             className="px-6 py-3 rounded-lg border border-gray-300 dark:border-slate-600 text-gray-700 dark:text-slate-300 font-medium hover:bg-gray-100 dark:hover:bg-slate-800 transition-colors flex items-center gap-2"
           >
             <Download className="w-4 h-4" />
-            Download Resume
+            下载简历
           </a>
         </motion.div>
 

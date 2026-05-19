@@ -12,7 +12,7 @@ const socialLinks = [
     icon: Linkedin,
   },
   {
-    label: "Email",
+    label: "邮箱",
     href: "mailto:hello@example.com",
     icon: Mail,
   },
@@ -26,7 +26,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-gray-600 dark:text-slate-400 flex items-center gap-1">
-            &copy; {year} Portfolio. Made with <Heart className="w-4 h-4 text-red-500 fill-red-500" /> using Next.js
+            &copy; {year} 作品集. 用 <Heart className="w-4 h-4 text-red-500 fill-red-500" /> 和 Next.js 制作
           </p>
           <div className="flex items-center gap-4">
             {socialLinks.map((link) => (

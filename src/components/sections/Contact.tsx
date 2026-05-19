@@ -15,11 +15,10 @@ export default function Contact() {
     <SectionWrapper id="contact" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          Get In Touch
+          联系我
         </h2>
         <p className="text-center text-gray-600 dark:text-slate-400 max-w-2xl mx-auto mb-12">
-          Have a project in mind or just want to say hi? I&apos;d love to hear
-          from you.
+          有项目想法或只是想打个招呼？我很乐意听到你的消息。
         </p>
 
         <div className="max-w-xl mx-auto">
@@ -30,11 +29,11 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 dark:text-slate-400">
-                  Email
+                  邮箱
                 </p>
                 <a
-                  href={`mailto:${email}`}
-                  className="text-gray-900 dark:text-white font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
+                                      href={`mailto:${email}`}
+                                      className="text-gray-900 dark:text-white font-medium hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
                 >
                   {email}
                 </a>
@@ -48,7 +47,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-gray-500 dark:text-slate-400">
-                    Location
+                    位置
                   </p>
                   <p className="text-gray-900 dark:text-white font-medium">
                     {location}

@@ -5,13 +5,13 @@ import { Menu, X } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
 const navLinks = [
-  { label: "Home", href: "#hero" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
-  { label: "Experience", href: "#experience" },
-  { label: "Education", href: "#education" },
-  { label: "Contact", href: "#contact" },
+  { label: "首页", href: "#hero" },
+  { label: "关于我", href: "#about" },
+  { label: "技能", href: "#skills" },
+  { label: "项目", href: "#projects" },
+  { label: "经历", href: "#experience" },
+  { label: "教育", href: "#education" },
+  { label: "联系", href: "#contact" },
 ];
 
 export default function Navbar() {
@@ -49,7 +49,7 @@ export default function Navbar() {
             href="#hero"
             className="text-xl font-bold text-gray-900 dark:text-white"
           >
-            Portfolio
+            作品集
           </a>
 
           {/* Desktop nav */}

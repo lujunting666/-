@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, Play, Image } from "lucide-react";
 
 interface ProjectCardProps {
   name: string;
@@ -6,6 +6,8 @@ interface ProjectCardProps {
   tech: string[];
   githubUrl?: string;
   liveUrl?: string;
+  image?: string;
+  video?: string;
 }
 
 export default function ProjectCard({
@@ -14,9 +16,37 @@ export default function ProjectCard({
   tech,
   githubUrl,
   liveUrl,
+  image,
+  video,
 }: ProjectCardProps) {
   return (
     <div className="group p-6 rounded-xl bg-white dark:bg-slate-800 border border-gray-200 dark:border-slate-700 hover:shadow-lg hover:border-primary-300 dark:hover:border-primary-700 transition-all duration-300">
+      {/* 项目图片/视频预览 */}
+      {image && (
+        <div className="relative -mx-6 -mt-6 mb-4 overflow-hidden rounded-t-xl">
+          <img
+            src={image}
+            alt={`${name} 截图`}
+            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105"
+            loading="lazy"
+          />
+          {video && (
+            <div className="absolute inset-0 flex items-center justify-center bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="p-3 rounded-full bg-white/90 text-primary-600 shadow-lg">
+                <Play className="w-6 h-6 fill-current" />
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* 无图片时的占位 */}
+      {!image && (
+        <div className="relative -mx-6 -mt-6 mb-4 h-24 flex items-center justify-center bg-gradient-to-br from-primary-50 to-primary-100 dark:from-slate-700 dark:to-slate-800 rounded-t-xl">
+          <Image className="w-8 h-8 text-primary-300 dark:text-slate-600" />
+        </div>
+      )}
+
       <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
         {name}
       </h3>
@@ -42,7 +72,7 @@ export default function ProjectCard({
             className="flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
           >
             <Github className="w-4 h-4" />
-            Source
+            源代码
           </a>
         )}
         {liveUrl && (
@@ -53,7 +83,7 @@ export default function ProjectCard({
             className="flex items-center gap-1.5 text-sm text-gray-600 dark:text-slate-400 hover:text-primary-600 dark:hover:text-primary-400 transition-colors"
           >
             <ExternalLink className="w-4 h-4" />
-            Live Demo
+            在线演示
           </a>
         )}
       </div>

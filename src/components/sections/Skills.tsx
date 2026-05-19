@@ -7,10 +7,10 @@ export default function Skills() {
     <SectionWrapper id="skills" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          Skills & Technologies
+          技能与技术
         </h2>
         <p className="text-center text-gray-600 dark:text-slate-400 max-w-2xl mx-auto mb-12">
-          Technologies and tools I work with on a daily basis.
+          我日常使用的技术和工具。
         </p>
 
         <div className="space-y-10">

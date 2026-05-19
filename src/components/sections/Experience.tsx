@@ -7,10 +7,10 @@ export default function Experience() {
     <SectionWrapper id="experience" className="py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          Work Experience
+          工作经历
         </h2>
         <p className="text-center text-gray-600 dark:text-slate-400 max-w-2xl mx-auto mb-12">
-          My professional journey and the companies I&apos;ve worked with.
+          我的职业历程。
         </p>
 
         <div className="max-w-3xl mx-auto">

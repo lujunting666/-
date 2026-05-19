@@ -10,28 +10,28 @@ import ScrollProgressBar from "@/components/ui/ScrollProgressBar";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Portfolio - Developer & Designer",
+  title: "作品集 - 全栈开发工程师",
   description:
-    "Personal portfolio showcasing projects, skills, and experience in software development.",
+    "个人作品集，展示软件开发项目、技能和工作经历。",
   openGraph: {
-    title: "Portfolio - Developer & Designer",
+    title: "作品集 - 全栈开发工程师",
     description:
-      "Personal portfolio showcasing projects, skills, and experience in software development.",
+      "个人作品集，展示软件开发项目、技能和工作经历。",
     type: "website",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Portfolio - Developer & Designer",
+        alt: "作品集 - 全栈开发工程师",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Portfolio - Developer & Designer",
+    title: "作品集 - 全栈开发工程师",
     description:
-      "Personal portfolio showcasing projects, skills, and experience in software development.",
+      "个人作品集，展示软件开发项目、技能和工作经历。",
     images: ["/og-image.png"],
   },
 };
@@ -42,7 +42,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="zh-CN" suppressHydrationWarning>
       <body className={`${inter.className} antialiased`}>
         <ThemeProvider>
           <ScrollProgressBar />

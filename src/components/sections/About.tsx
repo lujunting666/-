@@ -8,25 +8,27 @@ import { siteContent } from "@/data/content";
 const stats = [
   {
     end: 3,
-    label: "Years of Experience",
+    label: "年经验",
     suffix: "+",
     icon: <Code className="w-5 h-5" />,
   },
   {
     end: 20,
-    label: "Projects Completed",
+    label: "个项目",
     suffix: "+",
     icon: <Sparkles className="w-5 h-5" />,
   },
   {
     end: 15,
-    label: "Technologies Used",
+    label: "项技术",
     suffix: "+",
     icon: <Globe className="w-5 h-5" />,
   },
 ];
 
 export default function About() {
+  const { bio } = siteContent.personalInfo;
+
   return (
     <SectionWrapper
       id="about"
@@ -34,25 +36,16 @@ export default function About() {
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">
-          About Me
+          关于我
         </h2>
         <p className="text-center text-gray-600 dark:text-slate-400 max-w-2xl mx-auto mb-12">
-          A passionate developer who loves turning complex problems into simple,
-          beautiful solutions.
+          热爱将复杂问题转化为简洁、优雅的解决方案的开发者。
         </p>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-4">
             <p className="text-gray-600 dark:text-slate-400 leading-relaxed">
-              I am a full-stack developer with a deep passion for creating
-              seamless digital experiences. With expertise in React, Next.js,
-              TypeScript, and modern backend technologies, I bring ideas to life
-              through clean, maintainable code.
-            </p>
-            <p className="text-gray-600 dark:text-slate-400 leading-relaxed">
-              When I&apos;m not coding, you&apos;ll find me exploring new
-              technologies, contributing to open source, or writing technical
-              blog posts to share knowledge with the developer community.
+              {bio}
             </p>
           </div>
 
